@@ -18,16 +18,15 @@ namespace Divider
             Console.WriteLine("Enter the second integer");
             temp = Console.ReadLine();
             j = Convert.ToInt32(temp);
-            int k=0;
             try
             {
-               k = i / j;
+               int k = i / j;
+               Console.WriteLine("The result fo the division: {0}", k);
             }
             catch(DivideByZeroException)
             {
                 Console.WriteLine("Division of {0} by zero", i);
             }
-            Console.WriteLine("The result fo the division: {0}", k);
         }
     }
 }
